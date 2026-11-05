@@ -1,0 +1,44 @@
+{
+  "name": "@geiger/pay",
+  "version": "0.1.0",
+  "description": "Stripe Connect payments for the Geiger suite: organizations connect their own Stripe account, apps sell on their behalf, and the money lands in the organization's Stripe balance.",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.js",
+    "./server": "./src/server.js",
+    "./react": "./src/react/index.js"
+  },
+  "files": [
+    "src",
+    "sql",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@geiger/ui": "*",
+    "@supabase/supabase-js": "^2.45.0",
+    "lucide-react": ">=0.500.0",
+    "react": ">=19",
+    "stripe": ">=22.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@geiger/ui": {
+      "optional": true
+    },
+    "@supabase/supabase-js": {
+      "optional": true
+    },
+    "lucide-react": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "stripe": {
+      "optional": true
+    }
+  }
+}
